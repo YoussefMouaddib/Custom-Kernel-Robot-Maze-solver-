@@ -26,11 +26,6 @@ int main()
     uint32_t IR3 = read32(22);
     
 
-    /* Print values */
-    printf("GPIO 20: %d\n", IR1);
-    printf("GPIO 21: %d\n", IR2);
-    printf("GPIO 22: %d\n", IR3);
-
     if (IR1 == LOW && IR2 == HIGH && IR3 == LOW)//forward
     {
      pmwlefthigh();
